@@ -1,0 +1,190 @@
+body {
+  color: white;
+}
+.def-p {
+    font-family: 'Comfortaa';
+    font-size: 16px;
+    color: #fed420;
+    margin-top: 30px;
+    display: none;
+    margin-bottom: 0;
+}
+
+#definition {
+    font-family: 'Comfortaa';
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #fed420;
+    display: none;
+}
+
+form {
+    margin-top: 30px;
+    width: 100%;
+}
+
+form label {
+    color: black;
+    font-family: 'Comfortaa';
+    font-size: 12em;
+}
+
+#typeword {
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    padding-left: 15px;
+    outline: none;
+    border: 2px solid #fed420;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    color: black;
+}
+
+.submit {
+    background: transparent;
+    font-family: 'Grobold';
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    background-color: #fed420;
+    color: black;
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin-top: 5px;
+    width: 100%;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 5px 5px 1px white;
+}
+.choice-container {
+  display: flex;
+  margin-bottom: 0.8rem;
+  width: 30px;
+  border-radius: 15px;
+  background: rgb(500, 93, 255);
+  font-size: 3rem;
+  min-width: 30rem;
+  text-align: center;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(200, 280, 200, 0.5);
+  transform: scale(1.02);
+  transform: transform 100ms;
+}
+
+.choice-prefix {
+  padding: 2rem 2.5rem;
+  color: white;
+}
+
+.choice-text {
+  text-align: left;
+  padding: 2rem;
+  width: 10%;
+}
+
+.correct {
+  background: linear-gradient(32deg, rgb(11, 223, 36) 0%,
+  rgb(41, 232, 111)100%);
+}
+
+.incorrect {
+  background: linear-gradient(32deg, rgb(230, 29, 29, 1) 0%,
+  rgb(224, 11, 11, 1)100%);
+}
+
+/* Heads up Display */
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 3rem;
+  border: 0.2rem solid rgb(11,223,36);
+  margin-top: 2rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#progressBarFull {
+  height: 100%;
+  background: rgb(11,223,36);
+  width: 0%;
+}
+
+.playButton {
+  text-align: center;
+  border-radius: 10px;
+  width: 15px;
+}
+
+#question {
+  text-align: center;
+}
+
+.playWord {
+  background: linear-gradient(90deg, rgb(138,43,226) 0%,
+  rgb(148,0,211) 100%);
+  font-size: 30px;
+  padding: 15px 15px;
+  height: fit-content;
+  width: 300px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+}
+
+.playWord:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(138,43,226);
+  transition: transfore 150ms;
+  transform: scale(1.03);
+}
+
+.game-question-container{
+  width: 80%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid darkgray;
+  border-radius: 25px;
+}
+
+.game-question-container button{
+  width: 45%;
+  height: 3rem;
+  border: 2px solid darkgray;
+  border-radius: 20px;
+}
+
+.fa-play-circle {
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .choice-container {
+    min-width: 40rem;
+  }
+}

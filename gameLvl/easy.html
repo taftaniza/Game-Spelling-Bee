@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Game</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="box" id="questionScreen">
+          <div class="title">
+               Quiz level: Easy
+          </div>
+
+          <main>
+            <div class='wrapper' id='wrapper'> <!-- Quiz wrapper -->
+              <div id='difficulty'>
+                <div>
+                  <button class='difficultyBtn' id='ez' onclick='handleEasyBtn()'>Start</button>
+                </div>
+              </div>
+
+              <div id='main'>
+                <div class='topInfo'>
+                  <p id='scoreInfo' class="score"></p>
+                  <div class="timer" id='timer'>
+                    <p>Time left: 05:00</p>
+                  </div>
+                </div> <br>
+
+                <div id='questions' class='questions'>
+                  <h3>Hit the button!</h3>
+                  <br>
+                  <div class='playBtn' onclick='playAudio()'>
+                    <img src='play.png' alt='Play button' />
+                  </div>
+                </div>
+
+                <form class='answers' onsubmit='handleSubmit(event)'>
+                  <input type='text' id='answers' placeholder='Spell here' name="typeword" onchange='handleChange(event)' />
+                  <div class='btnWrapper'>
+                    <button type='submit' class='outlinedBtn'>Submit</button>
+                  </div>
+                </form> <br><br>
+
+                <div id='hintWrapper' class='hint'>
+                  <button id='hint'  onclick='showHint()'>Hint</button>
+                  <p id='showHint' class='showHint'></p>
+                </div>
+              </div>
+            </div>
+          </main>
+
+    <script src='easy.js'></script>
+</body>
+
+</html>

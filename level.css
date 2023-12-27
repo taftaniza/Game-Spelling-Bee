@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html, body{
+  height: 100%;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-image: url(wall2.jpeg);
+}
+.up{
+  text-align:center;
+  font-size: 2.4em;
+  font-weight: 200px;
+  justify-content: center;
+  padding: 10px 30px;
+  margin: 10px;
+  font-family: 'Fuzzy Bubbles', cursive;
+  text-shadow: 2px 5px white;
+}
+.back{
+  background-color: black;
+  color: white;
+}
+.btn-a{
+  width: 20px;
+  height: 15px;
+  font-size: 1em;
+  padding:20px 30px;
+  border-radius: 40px;
+  border: 1px solid;
+  text-decoration: none;
+  margin-left: 50px;
+  position:relative;
+}
+.container{
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+.btn-b {
+    width: 170px;
+    height: 35px;
+    font-size: 1.8em;
+    padding:40px 50px;
+    border-radius: 40px;
+    border: 2px solid;
+    text-decoration: none;
+    margin: 20px;
+    box-shadow: 10px 10px 10px black;
+    position:relative;
+
+}
+.btn-1{
+  background: #FFC300 ;
+  color:white;
+  border-radius: 45px;
+  transition: transform 0.5 ease;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.btn-2{
+  background: purple;
+  color:white;
+  border-radius: 45px;
+  transition: transform 0.6 ease;
+  text-align: center;
+  padding-bottom: 70px;
+
+}
+.btn-3{
+  background: brown;
+  color:white;
+  border-radius: 45px;
+  transition: transform 0.7 ease;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.btn::after, btn::before{
+  content:" ";
+  position: a
+  opacity: 0.3;
+  background: white;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+.btn:hover{
+  transform: translate(-12px, -12px);
+}
+.btn:hover::after{
+  transform: translate(12px, 12px);
+}

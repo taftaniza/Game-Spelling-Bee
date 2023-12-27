@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comfortaa:wght@700&family=Fuzzy+Bubbles:wght@700&family=Libre+Baskerville:wght@700&family=Lobster&family=Montserrat:ital,wght@1,200&family=PT+Serif:ital,wght@1,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "latto", sans-serif;
+  background-color: plum;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+.container{
+  width: 940px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 3px rgba(0,0,0,0.3);
+  padding: 80px 90px;
+  border-radius: 15px;
+  display: flex;
+}
+.leftSide, .rightSide {
+  width: 50%;
+}
+.leftSide img{
+  height: 250px;
+  width: 250px;
+}
+.rightSide h1{
+  color: hotpink;
+  font-size: 32px;
+}
+
+.rightSide h2{
+  color: plum;
+  margin: 20px auto 10px;
+  font-size: 25px;
+}
+.rightSide ul{
+  color: black;
+  font-size: 18px;
+  margin-top: 5px;
+  font-weight: 600px;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.rightSide ul li {
+  margin-top: 5px;
+}
+.rightSide a{
+  background-color: gold;
+  border-radius: 100px;
+  color: black;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 25px;
+  text-decoration: none;
+  outline:
+}
+/* question page css*/
+.box{
+  background-color: 	#E6E6FA;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 3px rgba(0,0,0,0.3);
+  min-height: 350px;
+  width: 640px;
+  padding: 50px;
+}
+#ez{
+  background: transparent;
+  font-family: 'Grobold';
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 25px;
+  margin-top: 5px;
+  width: 100%;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 5px 5px 1px gray;
+  text-align: center;
+
+}
+.title{
+  border-bottom: 1px solid white;
+  color: gray;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 25px;
+}
+.header{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.timer{
+  float: right;
+  font-size: 1em;
+}
+.scoreInfo{
+  font-size: 2em;
+}
+.questions{
+  background-color: #000000;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-align: center;
+
+}
+.playBtn img{
+  width: 100px;
+  height: 90px;
+}
+#answers {
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    padding-left: 15px;
+    outline: none;
+    border: 2px solid plum;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    color: black;
+    text-align: center;
+}
+.outlinedBtn {
+    background: transparent;
+    font-family: 'Grobold';
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin-top: 5px;
+    width: 100%;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 5px 5px 1px gray;
+    text-align: center;
+}
+#hint, #hintWrapper{
+  font-size: 15px;
+  font-family: 'Grobold';
+  outline: none;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-top: 5px;
+  width: 50%;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 5px 5px 1px gray;
+  text-align: center;
+  margin: 0 0px;
+}
+
+}
+.answer{
+  text-align: center;
+
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+.footer button{
+  background-color: hotpink;
+  border-radius: 5px;
+  padding: 7px 15px;
+  color: white;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+}
+.resultBox{
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 15px;
+  font-size: 20px;
+}
+.resultBox *:nth-child(odd){
+  text-align: right;
+}
+.resultBox span{
+  font-weight: 600;
+}
+.buttonBox{
+  border-top: 1px solid plum;
+  padding-top: 15px;
+  text-align: center;
+}
+.buttonBox a{
+  background-color: plum;
+  border-radius: 50px;
+  border: 0;
+  text-decoration: none;
+  color: white;
+  outline: none;
+  padding: 7px 15px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+/* media query start */
+@@media screen and (max-width:768px) {
+  .leftSide{
+    display: none;
+  }
+  .container, .box{
+    width: 425px;
+  }
+  .rightSide{
+    width: 100%;
+  }
+  .optionBox{
+    grid-template-columns: 1fr;
+  }
+
+}
